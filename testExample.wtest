@@ -1,9 +1,15 @@
-import example.pepita
+import example.*
 
 describe "group of tests for pepita" {
-
+  const universidad = new Universidad(provincia = "buenos Aires", honorarios = 3500)
+  const profesional1 = new ProfesionalVinculado(universidad = Universidad ) 
+  
   test "pepita has initial energy" {
-    assert.equals(100, pepita.energy())
+    assert.equals(3500, profesional1.honorarios())
   }
 
+  test "provincias" {
+    
+
+  }
 }
